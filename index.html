@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="titulo">HOSPITAL PROVINCIAL DE NEUQUÉN</h1>
+        </div>
+    </header>
+
+    <main id="main-names">
+       <section class="container">
+           <h2>Pacientes Registrados</h2>
+           <table>
+               <thead>
+                   <tr>
+                       <th>Nombre</th>
+                       <th>Peso (kg)</th>
+                       <th>Altura (m)</th>
+                       <th>Gordura Corporal (%)</th>
+                       <th>IMC</th>
+                   </tr>
+               </thead>
+
+               <tbody id="tabla-pacientes">
+                <tr class="paciente">
+                       <td class="info-nombre">Allan</td>
+                       <td class="info-peso">80</td>
+                       <td class="info-altura">1.71</td>
+                       <td class="info-gordura">15</td>
+                       <td class="info-imc">0</td>
+                </tr>
+
+                <tr class="paciente">
+                    <td class="info-nombre">Rocío</td>
+                    <td class="info-peso">95</td>
+                    <td class="info-altura">1.72</td>
+                    <td class="info-gordura">20</td>
+                    <td class="info-imc">0</td>
+                </tr>
+
+                <tr class="paciente">
+                    <td class="info-nombre">Natha</td>
+                    <td class="info-peso">35</td>
+                    <td class="info-altura">1.20</td>
+                    <td class="info-gordura">10</td>
+                    <td class="info-imc">0</td>
+                </tr>
+
+                <tr class="paciente">
+                    <td class="info-nombre">Roseline</td>
+                    <td class="info-peso">25</td>
+                    <td class="info-altura">0.98</td>
+                    <td class="info-gordura">12</td>
+                    <td class="info-imc">0</td>
+                </tr>
+               </tbody>
+           </table>
+       </section>
+    </main>
+
+
+    <section class="container">
+        <h2 id="titulo-form">Adicionar Nuevo Paciente</h2>
+        <form id="form-adicionar">
+            <div class="grupo">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" name="nombre" type="text" placeholder="digite el nombre del paciente" class="campo">
+            </div>
+            <div class="grupo">
+                <label for="peso">Peso:</label>
+                <input id="peso" name="peso" type="text" placeholder="digite el peso del paciente" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="altura">Altura:</label>
+                <input id="altura" name="altura" type="text" placeholder="digite la altura del paciente" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="gordura">% de Gordura:</label>
+                <input id="gordura" type="text" placeholder="digite el porcentaje de gordura del paciente" class="campo campo-medio">
+            </div>
+            <button id="adicionar-paciente" class="boton bto-principal">Adicionar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>

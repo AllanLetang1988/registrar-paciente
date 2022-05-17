@@ -1,0 +1,85 @@
+html {
+    background-color: rgb(201, 206, 242);
+}
+
+.titulo {
+    margin-top: 10px;
+    font-size: 60px;
+    color: rgb(21, 103, 131);
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    color: rgb(21, 103, 131);
+}
+
+table {
+    border: 1px solid black;
+    width: 600px;
+}
+
+
+th {
+    color: rgb(21, 103, 131);
+    border: 1px solid black;
+}
+
+th:hover {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*.paciente {
+    text-align: center;
+}*/
+
+#adicionar-paciente{
+    cursor: pointer;
+    background-color: rgb(21, 103, 131);
+    margin-left: 10px;
+    border-radius: 20px;
+    height: 25px;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 10px;
+}
+
+#form-adicionar, #titulo-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 8px;
+    border: 1px solid rgb(21, 103, 131);
+    height: 25px;
+}
+
+label {
+    color: rgb(21, 103, 131);
+    font-size: 25px;
+}
+
+@media (max-width: 500px) {
+    /*#form-adicionar, #titulo-form {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }*/
+    table, h2, .titulo {
+        width: 400px;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ 
+}
+
+
